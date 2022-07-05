@@ -1,29 +1,29 @@
-local function logo()
-  return ' '
-end
-
 require('lualine').setup {
   options = {
     icons_enabled = true,
     theme = 'auto',
-    component_separators = { left = '', right = ''},
-    section_separators = { left = ' ', right = ''},
+    component_separators = { left = '', right = '' },
+    section_separators = { left = ' ', right = '' },
     disabled_filetypes = {},
     always_divide_middle = true,
     globalstatus = false,
   },
   sections = {
     lualine_a = {
-        { logo , separator = { left = ''}, right_padding = 2 },
-        'mode'
+        { 'mode', icons_enabled = true, icon = ' ', separator = { left = '', right = ' '}}
     },
-    lualine_b = { 'branch', 'diff', 'diagnostics' },
+    lualine_b = { 
+        {'branch', icon = {'', align='left', color={fg='#3AE55D'}}},
+        { 'diff', colored = true, symbols = {added = ' ', modified = ' ', removed = ' '}},
+        { 'diagnostics', sources = { 'nvim_diagnostic', 'coc' }, sections = { 'error', 'warn', 'info', 'hint' }, symbols = {error = ' ', warn = ' ', info = ' '}}
+    },
     lualine_c = { 'filename' },
     lualine_x = { 'encoding', 'fileformat', 'filetype' },
     lualine_y = { 'progress' },
     lualine_z = {
         {'location', separator = { right = '' }}
-    },
+    }
+  },
   inactive_sections = {
     lualine_a = {},
     lualine_b = {},
@@ -35,4 +35,4 @@ require('lualine').setup {
   tabline = {},
   extensions = {}
 }
-}
+
