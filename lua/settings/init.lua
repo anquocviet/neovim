@@ -12,7 +12,11 @@ set.incsearch = true
 set.ignorecase = true
 set.smartcase = true
 
+set.number = true
 set.relativenumber = true
 set.clipboard = unnamedplus
+
+set.mouse = 'a'
+set.termguicolors = true
 
 set.hidden = true
