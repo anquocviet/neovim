@@ -14,7 +14,9 @@ return require('packer').startup(function()
     use 'nvim-treesitter/nvim-treesitter'   -- Treesitter
     use 'onsails/lspkind.nvim'              -- Neovim lsp completion icons
     use 'windwp/nvim-autopairs'             -- Neovim auto pairs
-    use 'nvim-lualine/lualine.nvim'
+
+    use 'nvim-lualine/lualine.nvim'         -- Lualine on bottom neovim
+    use 'akinsho/bufferline.nvim'           --Bufferline on top neovim
 
 
 
