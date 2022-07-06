@@ -16,7 +16,13 @@ return require('packer').startup(function()
     use 'windwp/nvim-autopairs'             -- Neovim auto pairs
 
     use 'nvim-lualine/lualine.nvim'         -- Lualine on bottom neovim
-    use 'akinsho/bufferline.nvim'           --Bufferline on top neovim
+    use 'akinsho/bufferline.nvim'           -- Bufferline on top neovim
+
+    use {                                   -- Telescope for finding easier
+        'nvim-telescope/telescope.nvim',
+        requires = { {'nvim-lua/plenary.nvim'} }
+    }
+    use 'voldikss/vim-floaterm'             -- Terminal in the floating/popup window
 
 
 
