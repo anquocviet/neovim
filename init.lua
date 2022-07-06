@@ -12,6 +12,8 @@ require("plugins-config.nvim-treesitter")   -- For Highlight code
 require("plugins-config.nvim-autopairs")    -- For Auto pairs
 require("plugins-config.nvim-lualine")      -- For Status line
 require("plugins-config.nvim-bufferline")   -- For Buffer line
+require("plugins-config.nvim-telescope")    -- For Finding easier
+require("plugins-config.nvim-floaterm")     -- For Float terminal
 
 require("lsp-config.language-server")       -- Language server config
 require("lsp-config.auto-completion")       -- Auto complete code
