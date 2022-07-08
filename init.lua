@@ -14,6 +14,11 @@ require("plugins-config.nvim-lualine")      -- For Status line
 require("plugins-config.nvim-bufferline")   -- For Buffer line
 require("plugins-config.nvim-telescope")    -- For Finding easier
 require("plugins-config.nvim-floaterm")     -- For Float terminal
+require("plugins-config.nvim-luasnip")      -- For Snippet Code 
+require("plugins-config.nvim-colorizer")    -- For Color Highlight
+require("plugins-config.nvim-gps")          -- For Your current code context
 
+-- LSP and Auto complete code
 require("lsp-config.language-server")       -- Language server config
 require("lsp-config.auto-completion")       -- Auto complete code
+
