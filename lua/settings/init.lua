@@ -17,6 +17,10 @@ set.relativenumber = true
 set.clipboard = unnamedplus
 
 set.mouse = 'a'
+set.shell = '/bin/bash'
 set.termguicolors = true
 
+set.fileencoding = 'utf-8'
+
 set.hidden = true
+

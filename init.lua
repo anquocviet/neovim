@@ -17,6 +17,7 @@ require("plugins-config.nvim-floaterm")     -- For Float terminal
 require("plugins-config.nvim-luasnip")      -- For Snippet Code 
 require("plugins-config.nvim-colorizer")    -- For Color Highlight
 require("plugins-config.nvim-gps")          -- For Your current code context
+require("plugins-config.nvim-comment")
 
 -- LSP and Auto complete code
 require("lsp-config.language-server")       -- Language server config

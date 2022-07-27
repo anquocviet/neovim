@@ -35,13 +35,19 @@ end
 -- Add additional capabilities supported by nvim-cmp
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 local lspconfig = require('lspconfig')
 
 -- Enable some language servers with the additional completion capabilities offered by nvim-cmp
 local servers = {
     'clangd',
-    'html'
+    'html',
+    'cssls',
+    'emmet_ls',
+    'cssmodules_ls',
+    'eslint',
+    'tsserver'
 }
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
@@ -64,5 +70,3 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagn
     prefix = '● ',
   }
 })
-
-
