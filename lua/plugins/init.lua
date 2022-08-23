@@ -11,6 +11,7 @@ return require('packer').startup(function()
     use 'hrsh7th/cmp-nvim-lsp'              -- LSP source for nvim-cmp
     use 'saadparwaiz1/cmp_luasnip'          -- Snippets source for nvim-cmp
     use 'L3MON4D3/LuaSnip'                  -- Snippets plugin
+    use "rafamadriz/friendly-snippets"      -- Friendly Snippet
 
     use 'nvim-treesitter/nvim-treesitter'   -- Treesitter
     use 'onsails/lspkind.nvim'              -- Neovim lsp completion icons
@@ -28,11 +29,7 @@ return require('packer').startup(function()
 
     use 'norcalli/nvim-colorizer.lua'       -- Color highligh
     use 'numToStr/Comment.nvim'             -- Smartt and Powerfull comment 
+    use 'leafOfTree/vim-matchtag'
 
-    vim.cmd([[
-      augroup packer_user_config
-        autocmd!
-        autocmd BufWritePost plugins.lua source <afile> | PackerSync
-      augroup end
-    ]])
+    use 'mfussenegger/nvim-jdtls'           -- Java Auto Completion and Suggestion
 end)

@@ -20,6 +20,7 @@ set.mouse = 'a'
 set.shell = '/bin/bash'
 set.termguicolors = true
 
+set.scrolloff = 5
 set.fileencoding = 'utf-8'
 
 set.hidden = true

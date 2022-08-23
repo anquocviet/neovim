@@ -3,9 +3,7 @@ require'nvim-treesitter.configs'.setup {
       "c",
       "cpp",
       "lua",
-      "html",
-      "css",
-      "javascript"
+      "java"
   },
 
   sync_install = false,
